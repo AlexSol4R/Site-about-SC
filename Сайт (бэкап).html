@@ -1,0 +1,163 @@
+<head>
+    <title>CSS Test</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            text-align: center;
+            line-height: 2;
+            margin-left: auto;
+        }
+        #page {
+            display: grid;
+            width: 100%;
+            height:auto;
+            grid-template-areas: 
+            "head head"
+            "nav main"
+            "foot foot";
+            grid-template-rows: 5% 1fr 7%;
+            grid-template-columns: 10% 90%;
+        }
+        #page > header {
+            grid-area: head;
+            background-color: antiquewhite;
+            font-size: 50px;
+            color: darkblue;
+            margin: auto;
+        }
+        #page > nav {
+            grid-area: nav;
+            background-color: #919485;
+            margin-bottom: auto;
+        }
+
+        #page > main {
+            grid-area: main;
+            color:aliceblue;
+            position: relative;
+            font-size: 20px;         
+        }
+
+        #page > footer {
+            grid-area: foot;
+            background-color: #ffffff;
+            text-align: left;
+            line-height: 10%;
+            position: relative;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-weight: bold;
+        }
+        
+        .terrans {
+            display: grid;
+            
+            grid-template-columns: 50% 50%;
+            background-color: rgb(22, 26, 45);
+            background-image: url(https://i.pinimg.com/originals/ad/30/bd/ad30bda95c846c01d7f6b98ee5af9486.jpg);
+            background-size: cover;
+            background-blend-mode: lighten;
+        }
+        .zerg {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            background-color: rgb(22, 26, 45);
+            background-image: url(https://i.pinimg.com/originals/59/35/4e/59354eca265c39f26c6b0e2df955988d.jpg);
+            background-size: cover;
+            background-blend-mode: lighten;
+        }
+        .protoss {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            background-color: rgb(22, 26, 45);
+            background-image: url(https://i.playground.ru/p/HvKpbILIkwLB3cru-m8-cQ.png);
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
+        img{
+            max-width: 70%;
+            height: auto;
+            border-style: solid;
+            border-color: green;
+        }
+        h1{
+            font-size: 30px;
+            color: aliceblue;
+        }
+        h2{
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        
+        .bot{
+            color: black;
+            font-style: italic;
+            font-size: 15px;
+            margin: auto;
+            border-style: solid;
+        }
+        .cont{
+            color: black;
+            font-style: italic;
+            font-size: 15px;
+            margin: auto;
+            border-top: solid;
+        }
+        .child{
+            margin: auto;
+        }
+        .textchild{
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <section id="page">
+        <header><div>Starcraft races showcase</div></header>
+        <main>
+            <div class="terrans">
+                <div class="textchild">
+                    <h1><a name="terran">Терраны</a></h1>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, qui tenetur? Eligendi corporis ratione dignissimos consequatur ad nulla! Ut dolorem ex expedita quasi ducimus porro a natus quaerat nulla cum, fugit exercitationem sit animi repellat error voluptate quos ab eos eaque. Numquam ducimus rem consequuntur aperiam esse iste veniam, excepturi adipisci nisi, incidunt quos laborum magnam ipsa maiores autem laudantium eos in rerum dolorum, dicta modi molestias? Sequi, hic repellendus.
+                </div>
+                <div class="child">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/292ac835130673.56eaa542a5768.jpg">
+                </div> 
+            </div>
+            <div class="protoss">
+                <div class="child">
+                    <img src="https://pvtest.ru/wp-content/uploads/6/f/6/6f69c0e2c7def8619917462c234c9439.jpeg">
+                </div>
+                <div class="textchild">
+                    <h1><a name="protoss">Протоссы</a></h1>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum in nulla ratione minima odit, tempora necessitatibus reprehenderit nemo, qui, ex voluptate? Illum impedit fuga obcaecati beatae voluptatibus sapiente id officiis ex natus nulla voluptas possimus magni quas quod ratione incidunt optio cupiditate adipisci quo dolore est in, necessitatibus debitis. Sequi, quidem id aperiam nisi eius error culpa nobis est blanditiis velit facilis sit ex, ab ratione debitis quam nulla fuga.
+                </div>
+            </div>
+            <div class="zerg">
+                <div class="textchild">
+                    <h1><a name="zerg">Зерги</a></h1>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perspiciatis illum quis facere distinctio corrupti earum optio provident eligendi voluptates fugit deserunt debitis error nulla, fugiat sed, sapiente reprehenderit odit quo quaerat dolore accusamus? Nam aliquam veritatis cupiditate impedit, fugiat expedita, odio praesentium placeat, culpa consequuntur rerum porro deserunt consequatur possimus? Qui consequuntur officia unde nemo in quam sint vitae facere repellat, tempora, rem aut quod sunt ad. Velit, quod.
+                </div>
+                <div class="child">
+                    <img src="https://www.zbrushcentral.com/uploads/default/original/4X/b/b/5/bb50efd85e1d5af3c862e6cf25a55f6390cb22bc.jpeg">
+                </div> 
+            </div>
+            
+        </main>
+        <nav>
+            <div class="bot">
+                <div><h2>Расы</h2></div>
+                <p><a href="#terran">Терраны</a></p>
+                <p><a href="#protoss">Протоссы</a></p>
+                <p><a href="#zerg">Зерги</a></p>
+                <div class="cont"><p><a href="#contacts">Контакты</a></p></div>
+            </div>
+        </nav>
+        <footer>
+            <p><a name="contacts">Контакты:</a></p>
+            <p>Телефон: +79876543210</p>
+            <p>email: PochtaRabochaya@mail.ru</p>
+        </footer>
+    </section>
+</body>
+
