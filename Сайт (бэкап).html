@@ -15,15 +15,17 @@
             "head head"
             "nav main"
             "foot foot";
-            grid-template-rows: 5% 1fr 7%;
+            grid-template-rows: 5% 1fr 5%;
             grid-template-columns: 10% 90%;
+            background-color: rgb(26, 47, 8);
+            background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614638157_46-p-kosmicheskii-fon-dlya-fotoshopa-77.jpg);
+            background-blend-mode: darken;
         }
         #page > header {
             grid-area: head;
-            background-color: antiquewhite;
             font-size: 50px;
-            color: darkblue;
-            margin: auto;
+            color: rgb(154, 154, 175);
+            
         }
         #page > nav {
             grid-area: nav;
@@ -35,14 +37,15 @@
             grid-area: main;
             color:aliceblue;
             position: relative;
-            font-size: 20px;         
+            font-size: 20px;
+            margin-left: 5px;         
         }
 
         #page > footer {
             grid-area: foot;
-            background-color: #ffffff;
+            background-color: #919485;
             text-align: center;
-            line-height: 10%;
+            line-height: 9%;
             margin:auto;
             font-weight: bold;
             
@@ -50,20 +53,15 @@
         
         .terrans {
             display: grid;
-            
             grid-template-columns: 50% 50%;
             background-color: rgb(22, 26, 45);
             background-image: url(https://i.pinimg.com/originals/ad/30/bd/ad30bda95c846c01d7f6b98ee5af9486.jpg);
             background-size: cover;
             background-blend-mode: lighten;
-        }
-        .zerg {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            background-color: rgb(22, 26, 45);
-            background-image: url(https://i.pinimg.com/originals/59/35/4e/59354eca265c39f26c6b0e2df955988d.jpg);
-            background-size: cover;
-            background-blend-mode: lighten;
+            margin-bottom: 1%;
+            margin-right: 1%;
+            border-style: solid;
+            border-color: rgb(35, 34, 32);
         }
         .protoss {
             display: grid;
@@ -72,12 +70,27 @@
             background-image: url(https://i.playground.ru/p/HvKpbILIkwLB3cru-m8-cQ.png);
             background-size: cover;
             background-blend-mode: multiply;
+            margin-bottom: 1%;
+            margin-right: 1%;
+            border-style: solid;
+            border-color: rgb(129, 120, 75);
+            
+        }
+        .zerg {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            background-color: rgb(22, 26, 45);
+            background-image: url(https://i.pinimg.com/originals/59/35/4e/59354eca265c39f26c6b0e2df955988d.jpg);
+            background-size: cover;
+            background-blend-mode: lighten;
+            margin-right: 1%;
+            border-style: solid;
+            border-color: rgb(41, 35, 5);
         }
         img{
             max-width: 70%;
             height: auto;
-            border-style: solid;
-            border-color: green;
+            
         }
         h1{
             font-size: 30px;
@@ -107,12 +120,29 @@
         }
         .textchild{
             margin: 15px;
+            
+        }
+        .headd{
+            border-style: none;
+            border-color: black;
+            display: grid;
+            grid-template-columns: 8% 1fr;
+        }
+        .headd> div.sign{
+            margin-left: 25px;
+            margin-top: auto;
+            margin-bottom: auto;
         }
     </style>
 </head>
 <body>
     <section id="page">
-        <header><div>Starcraft races showcase</div></header>
+        <header>
+            <div class="headd">
+                <div class="sign"><img src="https://sun6-22.userapi.com/s/v1/if1/8u9qxym2-Rl9Rs_sSfxLCJ2k3F5XemMnxluiZo8JExwnaiX-0QwZ0KxcjSEQW_gNJ1d7rg9R.jpg?size=841x841&quality=96&crop=29,29,841,841&ava=1"></div>
+                Starcraft races showcase
+            </div>
+        </header>
         <main>
             <div class="terrans">
                 <div class="textchild">
